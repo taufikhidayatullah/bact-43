@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DUMBWAYS</title>
+  <link rel="preload" href="css/app.css" as="style">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-logo"><img src="img/logo-DW.webp" alt="Dumbways Logo"></div>
+      <div class="header-nav">
+        <ul class="header-nav__left">
+          <li>
+            <a href="index.html" class="link">Home</a>
+          </li>
+          <li>
+            <a href="project.html" class="link link-active">My Project</a>
+          </li>
+        </ul>
+        <div class="header-nav__right">
+          <a href="contact.html" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-wrapper">
+    <section class="container-sm">
+      <div class="card">
+        <div class="card-wrapper ">
+          <h1 class="card-title">Add New Project</h1>
+          <div class="card-body">
+            <form onsubmit="getData(event)" class="form">
+              <label class="form-input">Project Name
+                <input id="project-name" type="text" class="input" value="Project Name">
+              </label>
+
+              <div class="form-group">
+                <label class="form-input">Start Date
+                  <input id="project-start" type="date" class="input"></label>
+                  
+                <label class="form-input">End Date
+                  <input id="project-end" type="date" class="input"></label>
+              </div>
+
+            <div class="text">
+              <label class="form-input">Description
+                <textarea id="project-description" cols="30" rows="4" class="textarea"></textarea>
+              </label>
+            </div>
+
+            <br>
+            <div class="content">
+                <label for="technologies">Technologies</label>
+                <div class="check">
+                    <input type="checkbox" value="nodeJs" name="technologies"/>Node JS
+                    <input type="checkbox" value="nextJs" name="technologies"/>Next JS
+                    <input type="checkbox" value="reactJs" name="technologies"/>React JS
+                    <input type="checkbox" value="ts" name="technologies"/>TypeScript
+                </div>
+            </div>
+
+            <br>
+            <label class="form-input">Upload Image
+              <input id="project-image" type="file" class="input">
+            </label>
+
+            <br>
+              <div class="form-submit">
+                <button class="btn btn-primary btn-lg rounded-full">Submit</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/project.js"></script>
+  
+</body>
+
+
+</html>
